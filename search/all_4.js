@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['head_20mount_20display_0',['Head Mount Display',['../group__hmd.html',1,'']]]
+  ['system_0',['Glasses Control System',['../group__glasses__control.html',1,'']]]
 ];

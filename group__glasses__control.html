@@ -5,14 +5,20 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>NRSDK: Glasses Control System</title>
+<title>NativeNRSDK: Glasses Control System</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -21,9 +27,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NRSDK<span id="projectnumber">&#160;2.1.2</span>
+   <div id="projectname">NativeNRSDK
    </div>
-   <div id="projectbrief">SDK project for NRSDK!</div>
   </td>
  </tr>
  </tbody>
@@ -48,6 +53,22 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('group__glasses__control.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -82,158 +103,186 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga7e83b571302c65f0c3c8682e337584b0" id="r_ga7e83b571302c65f0c3c8682e337584b0"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga7e83b571302c65f0c3c8682e337584b0">NRGlassesControlGlassesWearingCallback</a>) (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> glasses_control_handle, NRWearingStatus wearing_status, void *user_data)</td></tr>
-<tr class="memdesc:ga7e83b571302c65f0c3c8682e337584b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The callback method type which will be called when put on or take off the glasses.  <br /></td></tr>
-<tr class="separator:ga7e83b571302c65f0c3c8682e337584b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga52aa6d76f152a2fa265833754179f7bd" id="r_ga52aa6d76f152a2fa265833754179f7bd"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga52aa6d76f152a2fa265833754179f7bd">NRGlassesControlGlassesDisconnectedCallback</a>) (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> glasses_control_handle, void *user_data)</td></tr>
-<tr class="memdesc:ga52aa6d76f152a2fa265833754179f7bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The callback method type which will be called when the glasses is disconnected.  <br /></td></tr>
-<tr class="separator:ga52aa6d76f152a2fa265833754179f7bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga62c5d7b9b0650f3eae69152dca93c803" id="r_ga62c5d7b9b0650f3eae69152dca93c803"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga62c5d7b9b0650f3eae69152dca93c803">NRGlassesControlNotifyQuitAppCallback</a>) (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> glasses_control_handle, void *user_data, int32_t reason)</td></tr>
-<tr class="memdesc:ga62c5d7b9b0650f3eae69152dca93c803"><td class="mdescLeft">&#160;</td><td class="mdescRight">The callback method type which will be called when receive quit message.  <br /></td></tr>
-<tr class="separator:ga62c5d7b9b0650f3eae69152dca93c803"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga310408bf618da94a66e5fc93377176f9" id="r_ga310408bf618da94a66e5fc93377176f9"><td class="memItemLeft" align="right" valign="top"><a id="ga310408bf618da94a66e5fc93377176f9" name="ga310408bf618da94a66e5fc93377176f9"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>NRGlassesControlBrightnessKeyCallback</b>) (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> glasses_control_handle, int32_t key_event, void *user_data)</td></tr>
-<tr class="memdesc:ga310408bf618da94a66e5fc93377176f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The callback method type which will be called when a brightness key put down. <br /></td></tr>
-<tr class="separator:ga310408bf618da94a66e5fc93377176f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga34b5601901f6b1418799a4030850ac1f" id="r_ga34b5601901f6b1418799a4030850ac1f"><td class="memItemLeft" align="right" valign="top"><a id="ga34b5601901f6b1418799a4030850ac1f" name="ga34b5601901f6b1418799a4030850ac1f"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>NRGlassesControlBrightnessValueCallback</b>) (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> glasses_control_handle, int32_t value, void *user_data)</td></tr>
-<tr class="memdesc:ga34b5601901f6b1418799a4030850ac1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The callback method type which will be called when a brightness value changes. <br /></td></tr>
-<tr class="separator:ga34b5601901f6b1418799a4030850ac1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5bc44f65187de21bd0ee09d56bc20f0a" id="r_ga5bc44f65187de21bd0ee09d56bc20f0a"><td class="memItemLeft" align="right" valign="top"><a id="ga5bc44f65187de21bd0ee09d56bc20f0a" name="ga5bc44f65187de21bd0ee09d56bc20f0a"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>NRGlassesControlKeyEventCallback</b>) (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> glasses_control_handle, <a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> key_event_handle, void *user_data)</td></tr>
-<tr class="memdesc:ga5bc44f65187de21bd0ee09d56bc20f0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The callback method type which will be called when an key event data is ready. <br /></td></tr>
-<tr class="separator:ga5bc44f65187de21bd0ee09d56bc20f0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8aa6235274092701650e1f2ccfae3ef0" id="r_ga8aa6235274092701650e1f2ccfae3ef0"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga8aa6235274092701650e1f2ccfae3ef0">NRGlassesControlOverTemperatureCallback</a>) (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> glasses_control_handle, int32_t status, void *user_data)</td></tr>
-<tr class="memdesc:ga8aa6235274092701650e1f2ccfae3ef0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The callback method type which will be called when the temperature of the glasses is above the threshold or not.  <br /></td></tr>
-<tr class="separator:ga8aa6235274092701650e1f2ccfae3ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga244cc6030bc4e3957b4e3adf69762c26" id="r_ga244cc6030bc4e3957b4e3adf69762c26"><td class="memItemLeft" align="right" valign="top"><a id="ga244cc6030bc4e3957b4e3adf69762c26" name="ga244cc6030bc4e3957b4e3adf69762c26"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>NRGlassesControlLightIntensityCallback</b>) (NRHandle glasses_control_handle, int32_t value, void *user_data)</td></tr>
+<tr class="separator:ga244cc6030bc4e3957b4e3adf69762c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5231d26ecabb9d5e63f0abf287050aba" id="r_ga5231d26ecabb9d5e63f0abf287050aba"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga5231d26ecabb9d5e63f0abf287050aba">NRGlassesControlGlassesHardwareEventCallback</a>) (NRHandle glasses_control_handle, uint32_t category_id, uint32_t event_id, uint32_t time_offset, uint32_t info_1, uint32_t info_2, char *description, uint32_t description_length, void *user_data)</td></tr>
+<tr class="memdesc:ga5231d26ecabb9d5e63f0abf287050aba"><td class="mdescLeft">&#160;</td><td class="mdescRight">The callback method type which will be called when received a glasses hardware event.  <br /></td></tr>
+<tr class="separator:ga5231d26ecabb9d5e63f0abf287050aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga472f62f88e4bbeebf29ad4732ee755a9" id="r_ga472f62f88e4bbeebf29ad4732ee755a9"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga472f62f88e4bbeebf29ad4732ee755a9">NRGlassesControlNotifyDisplayChangeCallback</a>) (NRHandle glasses_control_handle, int32_t change_status, void *user_data)</td></tr>
+<tr class="memdesc:ga472f62f88e4bbeebf29ad4732ee755a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The callback method type which will be called when receive display device change.  <br /></td></tr>
+<tr class="separator:ga472f62f88e4bbeebf29ad4732ee755a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga86906452c9286185093ea72fe9c55148" id="r_ga86906452c9286185093ea72fe9c55148"><td class="memItemLeft" align="right" valign="top"><a id="ga86906452c9286185093ea72fe9c55148" name="ga86906452c9286185093ea72fe9c55148"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>NRGlassesControlScreenStatusCallback</b>) (NRHandle glasses_control_handle, int32_t status, void *user_data)</td></tr>
+<tr class="separator:ga86906452c9286185093ea72fe9c55148"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga8be890837a1c9ee7b4517170b434b2e3" id="r_ga8be890837a1c9ee7b4517170b434b2e3"><td class="memItemLeft" align="right" valign="top"><a id="ga8be890837a1c9ee7b4517170b434b2e3" name="ga8be890837a1c9ee7b4517170b434b2e3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>NR_ENUM</b> (NRWearingStatus)</td></tr>
-<tr class="memdesc:ga8be890837a1c9ee7b4517170b434b2e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The wearing status of glasses. <br /></td></tr>
-<tr class="separator:ga8be890837a1c9ee7b4517170b434b2e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga85c438376955e028621c56864a311414" id="r_ga85c438376955e028621c56864a311414"><td class="memItemLeft" align="right" valign="top"><a id="ga85c438376955e028621c56864a311414" name="ga85c438376955e028621c56864a311414"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>NR_ENUM</b> (NRGlassesTemperatureLevel)</td></tr>
-<tr class="memdesc:ga85c438376955e028621c56864a311414"><td class="mdescLeft">&#160;</td><td class="mdescRight">The level of glasses temperature. <br /></td></tr>
-<tr class="separator:ga85c438376955e028621c56864a311414"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa639645e6d648b120128d4b2781da196" id="r_gaa639645e6d648b120128d4b2781da196"><td class="memItemLeft" align="right" valign="top"><a id="gaa639645e6d648b120128d4b2781da196" name="gaa639645e6d648b120128d4b2781da196"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>NR_ENUM</b> (NRDisplayStereoMode)</td></tr>
-<tr class="memdesc:gaa639645e6d648b120128d4b2781da196"><td class="mdescLeft">&#160;</td><td class="mdescRight">The glasses display stereo mode. <br /></td></tr>
-<tr class="separator:gaa639645e6d648b120128d4b2781da196"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa6781c638803f13d29cdd6187baa3035" id="r_gaa6781c638803f13d29cdd6187baa3035"><td class="memItemLeft" align="right" valign="top"><a id="gaa6781c638803f13d29cdd6187baa3035" name="gaa6781c638803f13d29cdd6187baa3035"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>NR_ENUM</b> (NRGlassesControlQuitReason)</td></tr>
-<tr class="memdesc:gaa6781c638803f13d29cdd6187baa3035"><td class="mdescLeft">&#160;</td><td class="mdescRight">The reason for quit app. <br /></td></tr>
-<tr class="separator:gaa6781c638803f13d29cdd6187baa3035"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga020bbaf20755c611722f01f3a17f03f1" id="r_ga020bbaf20755c611722f01f3a17f03f1"><td class="memItemLeft" align="right" valign="top"><a id="ga020bbaf20755c611722f01f3a17f03f1" name="ga020bbaf20755c611722f01f3a17f03f1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>NR_ENUM</b> (NRBrightnessKeyEvent)</td></tr>
-<tr class="memdesc:ga020bbaf20755c611722f01f3a17f03f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">NRBrightnessKeyEvent. <br /></td></tr>
-<tr class="separator:ga020bbaf20755c611722f01f3a17f03f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8eb1d524794e6095978323a316ead1bd" id="r_ga8eb1d524794e6095978323a316ead1bd"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga8eb1d524794e6095978323a316ead1bd">NRGlassesControlCreate</a> (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> *out_glasses_control_handle)</td></tr>
-<tr class="memdesc:ga8eb1d524794e6095978323a316ead1bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the GlassesControl system object.  <br /></td></tr>
-<tr class="separator:ga8eb1d524794e6095978323a316ead1bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac9f91746de6b9f9d5bf9110f7695aa97" id="r_gac9f91746de6b9f9d5bf9110f7695aa97"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#gac9f91746de6b9f9d5bf9110f7695aa97">NRGlassesControlStart</a> (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> glasses_control_handle)</td></tr>
-<tr class="memdesc:gac9f91746de6b9f9d5bf9110f7695aa97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the GlassesControl system object.  <br /></td></tr>
-<tr class="separator:gac9f91746de6b9f9d5bf9110f7695aa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2fd4fcf56ab7d0776c7e6f9076cc91e0" id="r_ga2fd4fcf56ab7d0776c7e6f9076cc91e0"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga2fd4fcf56ab7d0776c7e6f9076cc91e0">NRGlassesControlPause</a> (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> glasses_control_handle)</td></tr>
-<tr class="memdesc:ga2fd4fcf56ab7d0776c7e6f9076cc91e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pause the GlassesControl system object.  <br /></td></tr>
-<tr class="separator:ga2fd4fcf56ab7d0776c7e6f9076cc91e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga337c748e23e91ce8f03adc14bcddca5d" id="r_ga337c748e23e91ce8f03adc14bcddca5d"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga337c748e23e91ce8f03adc14bcddca5d">NRGlassesControlResume</a> (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> glasses_control_handle)</td></tr>
-<tr class="memdesc:ga337c748e23e91ce8f03adc14bcddca5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resume the GlassesControl system object.  <br /></td></tr>
-<tr class="separator:ga337c748e23e91ce8f03adc14bcddca5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4087b5c5ddfe0a50630017ea6ff16519" id="r_ga4087b5c5ddfe0a50630017ea6ff16519"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga4087b5c5ddfe0a50630017ea6ff16519">NRGlassesControlStop</a> (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> glasses_control_handle)</td></tr>
-<tr class="memdesc:ga4087b5c5ddfe0a50630017ea6ff16519"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop the GlassesControl system object.  <br /></td></tr>
-<tr class="separator:ga4087b5c5ddfe0a50630017ea6ff16519"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3a68e587413c9875ac4600045778a7c4" id="r_ga3a68e587413c9875ac4600045778a7c4"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga3a68e587413c9875ac4600045778a7c4">NRGlassesControlDestroy</a> (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> glasses_control_handle)</td></tr>
-<tr class="memdesc:ga3a68e587413c9875ac4600045778a7c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release memory used by the GlassesControl system object.  <br /></td></tr>
-<tr class="separator:ga3a68e587413c9875ac4600045778a7c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1b7183b5baa07ff75e5dd4c9431cbc9f" id="r_ga1b7183b5baa07ff75e5dd4c9431cbc9f"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga1b7183b5baa07ff75e5dd4c9431cbc9f">NRGlassesControlSetGlassesWearingCallback</a> (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> glasses_control_handle, <a class="el" href="group__glasses__control.html#ga7e83b571302c65f0c3c8682e337584b0">NRGlassesControlGlassesWearingCallback</a> data_callback, void *user_data)</td></tr>
-<tr class="memdesc:ga1b7183b5baa07ff75e5dd4c9431cbc9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback method when put on or take off the glasses.  <br /></td></tr>
-<tr class="separator:ga1b7183b5baa07ff75e5dd4c9431cbc9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga14c7b6f3d23eaaf9a6278f7ab3b9d0d4" id="r_ga14c7b6f3d23eaaf9a6278f7ab3b9d0d4"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga14c7b6f3d23eaaf9a6278f7ab3b9d0d4">NRGlassesControlSetGlassesDisconnectedCallback</a> (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> glasses_control_handle, <a class="el" href="group__glasses__control.html#ga52aa6d76f152a2fa265833754179f7bd">NRGlassesControlGlassesDisconnectedCallback</a> data_callback, void *user_data)</td></tr>
-<tr class="memdesc:ga14c7b6f3d23eaaf9a6278f7ab3b9d0d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback method when the glasses is disconnected.  <br /></td></tr>
-<tr class="separator:ga14c7b6f3d23eaaf9a6278f7ab3b9d0d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaedfce2b1a9fe475cf4c8accf60d3f43a" id="r_gaedfce2b1a9fe475cf4c8accf60d3f43a"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#gaedfce2b1a9fe475cf4c8accf60d3f43a">NRGlassesControlSetNotifyQuitAppCallback</a> (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> glasses_control_handle, <a class="el" href="group__glasses__control.html#ga62c5d7b9b0650f3eae69152dca93c803">NRGlassesControlNotifyQuitAppCallback</a> data_callback, void *user_data)</td></tr>
-<tr class="memdesc:gaedfce2b1a9fe475cf4c8accf60d3f43a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback method which will be called when receive quit message.  <br /></td></tr>
-<tr class="separator:gaedfce2b1a9fe475cf4c8accf60d3f43a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga863f400246f5d82d0bac9d442211124a" id="r_ga863f400246f5d82d0bac9d442211124a"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga863f400246f5d82d0bac9d442211124a">NRGlassesControlGetTemperatureLevel</a> (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> glasses_control_handle, NRGlassesTemperatureLevel *temperature_level)</td></tr>
-<tr class="memdesc:ga863f400246f5d82d0bac9d442211124a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the temperature level of the glasses.  <br /></td></tr>
-<tr class="separator:ga863f400246f5d82d0bac9d442211124a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga67a77137ab97446e5563ac320fb15722" id="r_ga67a77137ab97446e5563ac320fb15722"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga67a77137ab97446e5563ac320fb15722">NRGlassesControlGetBrightness</a> (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> glasses_control_handle, int32_t *out_brightness)</td></tr>
-<tr class="memdesc:ga67a77137ab97446e5563ac320fb15722"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get brightness value of glasses screen.  <br /></td></tr>
-<tr class="separator:ga67a77137ab97446e5563ac320fb15722"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga470b88e92995bbbcbe37054f5a0fc201" id="r_ga470b88e92995bbbcbe37054f5a0fc201"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga470b88e92995bbbcbe37054f5a0fc201">NRGlassesControlSetBrightness</a> (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> glasses_control_handle, int32_t brightness)</td></tr>
-<tr class="memdesc:ga470b88e92995bbbcbe37054f5a0fc201"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set brightness value of glasses screen.  <br /></td></tr>
-<tr class="separator:ga470b88e92995bbbcbe37054f5a0fc201"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1dc4ac927012e8c01e9a55be84fd9c4a" id="r_ga1dc4ac927012e8c01e9a55be84fd9c4a"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga1dc4ac927012e8c01e9a55be84fd9c4a">NRGlassesControlSetBrightnessKeyCallback</a> (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> glasses_control_handle, <a class="el" href="group__glasses__control.html#ga310408bf618da94a66e5fc93377176f9">NRGlassesControlBrightnessKeyCallback</a> callback, void *user_data)</td></tr>
-<tr class="memdesc:ga1dc4ac927012e8c01e9a55be84fd9c4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback method .  <br /></td></tr>
-<tr class="separator:ga1dc4ac927012e8c01e9a55be84fd9c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa3a2d7991925eca73f29fc10819be954" id="r_gaa3a2d7991925eca73f29fc10819be954"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#gaa3a2d7991925eca73f29fc10819be954">NRGlassesControlSetBrightnessValueCallback</a> (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> glasses_control_handle, <a class="el" href="group__glasses__control.html#ga34b5601901f6b1418799a4030850ac1f">NRGlassesControlBrightnessValueCallback</a> callback, void *user_data)</td></tr>
-<tr class="memdesc:gaa3a2d7991925eca73f29fc10819be954"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback method .  <br /></td></tr>
-<tr class="separator:gaa3a2d7991925eca73f29fc10819be954"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4796d514735140780d4249714a1a5c71" id="r_ga4796d514735140780d4249714a1a5c71"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga4796d514735140780d4249714a1a5c71">NRGlassesControlSetKeyEventCallback</a> (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> glasses_control_handle, <a class="el" href="group__glasses__control.html#ga5bc44f65187de21bd0ee09d56bc20f0a">NRGlassesControlKeyEventCallback</a> key_event_callback, void *user_data)</td></tr>
-<tr class="memdesc:ga4796d514735140780d4249714a1a5c71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback method .  <br /></td></tr>
-<tr class="separator:ga4796d514735140780d4249714a1a5c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3ab1e82b7403e54b90b9add4187e68cf" id="r_ga3ab1e82b7403e54b90b9add4187e68cf"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga3ab1e82b7403e54b90b9add4187e68cf">NRGlassesControlGetPsensorSwitchState</a> (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> glasses_control_handle, int32_t *out_state)</td></tr>
-<tr class="memdesc:ga3ab1e82b7403e54b90b9add4187e68cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get psensor switch state.  <br /></td></tr>
-<tr class="separator:ga3ab1e82b7403e54b90b9add4187e68cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7d05b443c5b879dad9a3dd35429ae3e7" id="r_ga7d05b443c5b879dad9a3dd35429ae3e7"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga7d05b443c5b879dad9a3dd35429ae3e7">NRGlassesControlSetPsensorSwitchState</a> (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> glasses_control_handle, int32_t state)</td></tr>
-<tr class="memdesc:ga7d05b443c5b879dad9a3dd35429ae3e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set psensor switch state.  <br /></td></tr>
-<tr class="separator:ga7d05b443c5b879dad9a3dd35429ae3e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab50ef7906f3b2dacca8516300151a1a5" id="r_gab50ef7906f3b2dacca8516300151a1a5"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#gab50ef7906f3b2dacca8516300151a1a5">NRGlassesControlGetPsensorIsWearing</a> (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> glasses_control_handle, int32_t *out_state)</td></tr>
-<tr class="memdesc:gab50ef7906f3b2dacca8516300151a1a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get psensor is close head state.  <br /></td></tr>
-<tr class="separator:gab50ef7906f3b2dacca8516300151a1a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0c2106090a4f07a201e160fc0c2e5583" id="r_ga0c2106090a4f07a201e160fc0c2e5583"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga0c2106090a4f07a201e160fc0c2e5583">NRGlassesControlGetBrightnessLevelNumber</a> (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> glasses_control_handle, int32_t *out_brightness_level_number)</td></tr>
-<tr class="memdesc:ga0c2106090a4f07a201e160fc0c2e5583"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get brightness level number of glasses screen.  <br /></td></tr>
-<tr class="separator:ga0c2106090a4f07a201e160fc0c2e5583"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga702c3573a511932a042bd3b1ebce214b" id="r_ga702c3573a511932a042bd3b1ebce214b"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga702c3573a511932a042bd3b1ebce214b">NRGlassesControlGetDisplayStereoMode</a> (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> glasses_control_handle, NRDisplayStereoMode *out_brightness_level_number)</td></tr>
-<tr class="memdesc:ga702c3573a511932a042bd3b1ebce214b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the stereo mode(2D/3D) of glasses screen.  <br /></td></tr>
-<tr class="separator:ga702c3573a511932a042bd3b1ebce214b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gace3576e98fbfb96432d27344659e1e12" id="r_gace3576e98fbfb96432d27344659e1e12"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#gace3576e98fbfb96432d27344659e1e12">NRGlassesControlSetOverTemperatureCallback</a> (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> glasses_control_handle, <a class="el" href="group__glasses__control.html#ga8aa6235274092701650e1f2ccfae3ef0">NRGlassesControlOverTemperatureCallback</a> data_callback, void *user_data)</td></tr>
-<tr class="memdesc:gace3576e98fbfb96432d27344659e1e12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback method .  <br /></td></tr>
-<tr class="separator:gace3576e98fbfb96432d27344659e1e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9081c6ad70325210c896958f49a75c3b" id="r_ga9081c6ad70325210c896958f49a75c3b"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga9081c6ad70325210c896958f49a75c3b">NRGlassesControlToggleKey</a> (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> glasses_control_handle, int32_t key_type, int32_t key_function, int32_t flag)</td></tr>
-<tr class="memdesc:ga9081c6ad70325210c896958f49a75c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toogle(enable or disable) the key of glasses .  <br /></td></tr>
-<tr class="separator:ga9081c6ad70325210c896958f49a75c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga338f5cddf5efd8594148a97bddd01e43" id="r_ga338f5cddf5efd8594148a97bddd01e43"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga338f5cddf5efd8594148a97bddd01e43">NRGlassesControlSetScreenColorCalibrationType</a> (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> glasses_control_handle, int32_t type)</td></tr>
-<tr class="memdesc:ga338f5cddf5efd8594148a97bddd01e43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the color calibration type of the screen.  <br /></td></tr>
-<tr class="separator:ga338f5cddf5efd8594148a97bddd01e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga415895e8e9c2edf77f935c5f7841861e" id="r_ga415895e8e9c2edf77f935c5f7841861e"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga415895e8e9c2edf77f935c5f7841861e">NRGlassesControlGetScreenColorCalibrationType</a> (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> glasses_control_handle, int32_t *out_type)</td></tr>
-<tr class="memdesc:ga415895e8e9c2edf77f935c5f7841861e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the color calibration type of the screen.  <br /></td></tr>
-<tr class="separator:ga415895e8e9c2edf77f935c5f7841861e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5b5c7792d77d5c9814871ad960461a0b" id="r_ga5b5c7792d77d5c9814871ad960461a0b"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga5b5c7792d77d5c9814871ad960461a0b">NRGlassesControlGetElectrochromicTotalLevel</a> (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> glasses_control_handle, int32_t *out_total_level)</td></tr>
-<tr class="memdesc:ga5b5c7792d77d5c9814871ad960461a0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total electrochromic level of glasses.  <br /></td></tr>
-<tr class="separator:ga5b5c7792d77d5c9814871ad960461a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaee03a33014e3c97ad4f4f6e98ec78bfb" id="r_gaee03a33014e3c97ad4f4f6e98ec78bfb"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#gaee03a33014e3c97ad4f4f6e98ec78bfb">NRGlassesControlSetElectrochromicLevel</a> (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> glasses_control_handle, int32_t level)</td></tr>
-<tr class="memdesc:gaee03a33014e3c97ad4f4f6e98ec78bfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the electrochromic level of glasses.  <br /></td></tr>
-<tr class="separator:gaee03a33014e3c97ad4f4f6e98ec78bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga86f5dbaab173a9bbc8adf006ae695de0" id="r_ga86f5dbaab173a9bbc8adf006ae695de0"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga86f5dbaab173a9bbc8adf006ae695de0">NRGlassesControlGetElectrochromicLevel</a> (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> glasses_control_handle, int32_t *out_level)</td></tr>
-<tr class="memdesc:ga86f5dbaab173a9bbc8adf006ae695de0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current electrochromic level of glasses.  <br /></td></tr>
-<tr class="separator:ga86f5dbaab173a9bbc8adf006ae695de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2c20d20f7aff3ebe8c17a04ac5d5ba31" id="r_ga2c20d20f7aff3ebe8c17a04ac5d5ba31"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga2c20d20f7aff3ebe8c17a04ac5d5ba31">NRGlassesControlSetHostType</a> (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> glasses_control_handle, int32_t type)</td></tr>
-<tr class="memdesc:ga2c20d20f7aff3ebe8c17a04ac5d5ba31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set host type.  <br /></td></tr>
-<tr class="separator:ga2c20d20f7aff3ebe8c17a04ac5d5ba31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga982f3af7ea3ed355b47bc6396e70795a" id="r_ga982f3af7ea3ed355b47bc6396e70795a"><td class="memItemLeft" align="right" valign="top"><a id="ga982f3af7ea3ed355b47bc6396e70795a" name="ga982f3af7ea3ed355b47bc6396e70795a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>NR_ENUM</b> (NRGlassesControl)</td></tr>
+<tr class="memdesc:ga982f3af7ea3ed355b47bc6396e70795a"><td class="mdescLeft">&#160;</td><td class="mdescRight">NRGlassesControl. <br /></td></tr>
+<tr class="separator:ga982f3af7ea3ed355b47bc6396e70795a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4bacd310d1122d3502204fc42eb3314d" id="r_ga4bacd310d1122d3502204fc42eb3314d"><td class="memItemLeft" align="right" valign="top"><a id="ga4bacd310d1122d3502204fc42eb3314d" name="ga4bacd310d1122d3502204fc42eb3314d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>NR_ENUM</b> (NRGlassesTemperaturePosition)</td></tr>
+<tr class="memdesc:ga4bacd310d1122d3502204fc42eb3314d"><td class="mdescLeft">&#160;</td><td class="mdescRight">NRGlassesTemperaturePosition. <br /></td></tr>
+<tr class="separator:ga4bacd310d1122d3502204fc42eb3314d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4f6347b6397e6a79555c45e743f4a494" id="r_ga4f6347b6397e6a79555c45e743f4a494"><td class="memItemLeft" align="right" valign="top"><a id="ga4f6347b6397e6a79555c45e743f4a494" name="ga4f6347b6397e6a79555c45e743f4a494"></a>
+NRResult&#160;</td><td class="memItemRight" valign="bottom"><b>NRGlassesControlGetPsensorValue</b> (NRHandle perception_handle, int32_t *out_value)</td></tr>
+<tr class="separator:ga4f6347b6397e6a79555c45e743f4a494"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabfc30910c1a7deebbd612ed8d0b9091b" id="r_gabfc30910c1a7deebbd612ed8d0b9091b"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#gabfc30910c1a7deebbd612ed8d0b9091b">NRGlassesControlSetLightIntensityCallback</a> (NRHandle glasses_control_handle, NRGlassesControlLightIntensityCallback data_callback, void *user_data)</td></tr>
+<tr class="memdesc:gabfc30910c1a7deebbd612ed8d0b9091b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback method .  <br /></td></tr>
+<tr class="separator:gabfc30910c1a7deebbd612ed8d0b9091b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaca46fa54201671ba7822e8fb9bbae9b7" id="r_gaca46fa54201671ba7822e8fb9bbae9b7"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#gaca46fa54201671ba7822e8fb9bbae9b7">NRGlassesControlSetLightIntensityState</a> (NRHandle glasses_control_handle, int32_t state)</td></tr>
+<tr class="memdesc:gaca46fa54201671ba7822e8fb9bbae9b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/Disable light intensity notify.  <br /></td></tr>
+<tr class="separator:gaca46fa54201671ba7822e8fb9bbae9b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0f7af96095631cf70be65919859614f0" id="r_ga0f7af96095631cf70be65919859614f0"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga0f7af96095631cf70be65919859614f0">NRGlassesControlGetLightIntensityState</a> (NRHandle glasses_control_handle, int32_t *out_state)</td></tr>
+<tr class="memdesc:ga0f7af96095631cf70be65919859614f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">stop light intensity notify.  <br /></td></tr>
+<tr class="separator:ga0f7af96095631cf70be65919859614f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5b100a322ffc78d24806b5642a7943d8" id="r_ga5b100a322ffc78d24806b5642a7943d8"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga5b100a322ffc78d24806b5642a7943d8">NRGlassesControlSetDuty</a> (NRHandle glasses_control_handle, int32_t duty)</td></tr>
+<tr class="memdesc:ga5b100a322ffc78d24806b5642a7943d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set duty cycle of glasses screen.  <br /></td></tr>
+<tr class="separator:ga5b100a322ffc78d24806b5642a7943d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4ad33a5edea11610af1682a8cb57cbd3" id="r_ga4ad33a5edea11610af1682a8cb57cbd3"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga4ad33a5edea11610af1682a8cb57cbd3">NRGlassesControlGetDuty</a> (NRHandle glasses_control_handle, int32_t *out_duty)</td></tr>
+<tr class="memdesc:ga4ad33a5edea11610af1682a8cb57cbd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get duty cycle of glasses screen.  <br /></td></tr>
+<tr class="separator:ga4ad33a5edea11610af1682a8cb57cbd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab9e95807930d9e9bc03a3e3280175a35" id="r_gab9e95807930d9e9bc03a3e3280175a35"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#gab9e95807930d9e9bc03a3e3280175a35">NRGlassesControlGetVersion</a> (NRHandle glasses_control_handle, char *out_version, int32_t len)</td></tr>
+<tr class="memdesc:gab9e95807930d9e9bc03a3e3280175a35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get glasses firmware version.  <br /></td></tr>
+<tr class="separator:gab9e95807930d9e9bc03a3e3280175a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad97e75b976d2fb636d3343f652c35c78" id="r_gad97e75b976d2fb636d3343f652c35c78"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#gad97e75b976d2fb636d3343f652c35c78">NRGlassesControlGetHWVersion</a> (NRHandle glasses_control_handle, char *out_version, int32_t len)</td></tr>
+<tr class="memdesc:gad97e75b976d2fb636d3343f652c35c78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get glasses hardware version.  <br /></td></tr>
+<tr class="separator:gad97e75b976d2fb636d3343f652c35c78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8cff3636986449fdb06bd07c5bf0b949" id="r_ga8cff3636986449fdb06bd07c5bf0b949"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga8cff3636986449fdb06bd07c5bf0b949">NRGlassesControlGet2D3DMode</a> (NRHandle glasses_control_handle, int32_t *out_mode)</td></tr>
+<tr class="memdesc:ga8cff3636986449fdb06bd07c5bf0b949"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the mode(2D/3D) of glasses screen.  <br /></td></tr>
+<tr class="separator:ga8cff3636986449fdb06bd07c5bf0b949"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf370c7ece8c34be79692b710eccc9fe9" id="r_gaf370c7ece8c34be79692b710eccc9fe9"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#gaf370c7ece8c34be79692b710eccc9fe9">NRGlassesControlSet2D3DMode</a> (NRHandle glasses_control_handle, int32_t mode)</td></tr>
+<tr class="memdesc:gaf370c7ece8c34be79692b710eccc9fe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set mode of glasses screen.  <br /></td></tr>
+<tr class="separator:gaf370c7ece8c34be79692b710eccc9fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafdfe6d3ac4691d23845b0723fcf83aec" id="r_gafdfe6d3ac4691d23845b0723fcf83aec"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#gafdfe6d3ac4691d23845b0723fcf83aec">NRGlassesControlGetGlassesID</a> (NRHandle glasses_control_handle, char *out_glasses_id, int32_t len)</td></tr>
+<tr class="memdesc:gafdfe6d3ac4691d23845b0723fcf83aec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get glasses id.  <br /></td></tr>
+<tr class="separator:gafdfe6d3ac4691d23845b0723fcf83aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac54dd7949536cda9f6a0d773b80921b3" id="r_gac54dd7949536cda9f6a0d773b80921b3"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#gac54dd7949536cda9f6a0d773b80921b3">NRGlassesControlGetGlassesSN</a> (NRHandle glasses_control_handle, char *out_glasses_sn, int32_t len)</td></tr>
+<tr class="memdesc:gac54dd7949536cda9f6a0d773b80921b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get glasses SN.  <br /></td></tr>
+<tr class="separator:gac54dd7949536cda9f6a0d773b80921b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3b23e4aa38b77a3d21f616e93c85b6cf" id="r_ga3b23e4aa38b77a3d21f616e93c85b6cf"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga3b23e4aa38b77a3d21f616e93c85b6cf">NRGlassesControlGet7211ICStatus</a> (NRHandle glasses_control_handle, int32_t flag, char *out_status, int32_t len)</td></tr>
+<tr class="memdesc:ga3b23e4aa38b77a3d21f616e93c85b6cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get status of glasses ic chip.  <br /></td></tr>
+<tr class="separator:ga3b23e4aa38b77a3d21f616e93c85b6cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf9a0363ae314d43500198f35ef483552" id="r_gaf9a0363ae314d43500198f35ef483552"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#gaf9a0363ae314d43500198f35ef483552">NRGlassesControlSetLogTrigger</a> (NRHandle glasses_control_handle, int32_t state)</td></tr>
+<tr class="memdesc:gaf9a0363ae314d43500198f35ef483552"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger a log write event.  <br /></td></tr>
+<tr class="separator:gaf9a0363ae314d43500198f35ef483552"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4a95078d9d2270787e3c99f493d6548d" id="r_ga4a95078d9d2270787e3c99f493d6548d"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga4a95078d9d2270787e3c99f493d6548d">NRGlassesControlGetTemperatureData</a> (NRHandle glasses_control_handle, int32_t position, int32_t *out_temperature)</td></tr>
+<tr class="memdesc:ga4a95078d9d2270787e3c99f493d6548d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get temerature of glasses.  <br /></td></tr>
+<tr class="separator:ga4a95078d9d2270787e3c99f493d6548d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga09eae60b3a39d5790408e66323e3f91b" id="r_ga09eae60b3a39d5790408e66323e3f91b"><td class="memItemLeft" align="right" valign="top"><a id="ga09eae60b3a39d5790408e66323e3f91b" name="ga09eae60b3a39d5790408e66323e3f91b"></a>
+NRResult&#160;</td><td class="memItemRight" valign="bottom"><b>NRGlassesControlGetSleepTime</b> (NRHandle glasses_control_handle, int32_t *out_time_sec)</td></tr>
+<tr class="separator:ga09eae60b3a39d5790408e66323e3f91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8040a05a1b36c0bf5f56360bda02238e" id="r_ga8040a05a1b36c0bf5f56360bda02238e"><td class="memItemLeft" align="right" valign="top"><a id="ga8040a05a1b36c0bf5f56360bda02238e" name="ga8040a05a1b36c0bf5f56360bda02238e"></a>
+NRResult&#160;</td><td class="memItemRight" valign="bottom"><b>NRGlassesControlSetSleepTime</b> (NRHandle glasses_control_handle, int32_t time_sec)</td></tr>
+<tr class="separator:ga8040a05a1b36c0bf5f56360bda02238e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5153ceac7aa33850b1014c294db50ef1" id="r_ga5153ceac7aa33850b1014c294db50ef1"><td class="memItemLeft" align="right" valign="top"><a id="ga5153ceac7aa33850b1014c294db50ef1" name="ga5153ceac7aa33850b1014c294db50ef1"></a>
+NRResult&#160;</td><td class="memItemRight" valign="bottom"><b>NRGlassesControlGetPowerMode</b> (NRHandle glasses_control_handle, int32_t *out_mode)</td></tr>
+<tr class="separator:ga5153ceac7aa33850b1014c294db50ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4353082e79346e1b8b46bdf0002e4c98" id="r_ga4353082e79346e1b8b46bdf0002e4c98"><td class="memItemLeft" align="right" valign="top"><a id="ga4353082e79346e1b8b46bdf0002e4c98" name="ga4353082e79346e1b8b46bdf0002e4c98"></a>
+NRResult&#160;</td><td class="memItemRight" valign="bottom"><b>NRGlassesControlSetPowerMode</b> (NRHandle glasses_control_handle, int32_t mode)</td></tr>
+<tr class="separator:ga4353082e79346e1b8b46bdf0002e4c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeaf326b28694d845f0d45f42a5889713" id="r_gaeaf326b28694d845f0d45f42a5889713"><td class="memItemLeft" align="right" valign="top"><a id="gaeaf326b28694d845f0d45f42a5889713" name="gaeaf326b28694d845f0d45f42a5889713"></a>
+NRResult&#160;</td><td class="memItemRight" valign="bottom"><b>NRGlassesControlGetDPFwVersion</b> (NRHandle glasses_control_handle, char *out_version, int32_t len)</td></tr>
+<tr class="separator:gaeaf326b28694d845f0d45f42a5889713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga41abba520f63ba7ddf8033d9afdd51bc" id="r_ga41abba520f63ba7ddf8033d9afdd51bc"><td class="memItemLeft" align="right" valign="top"><a id="ga41abba520f63ba7ddf8033d9afdd51bc" name="ga41abba520f63ba7ddf8033d9afdd51bc"></a>
+NRResult&#160;</td><td class="memItemRight" valign="bottom"><b>NRGlassesControlGetCustomerID</b> (NRHandle glasses_control_handle, char **out_customer_id)</td></tr>
+<tr class="separator:ga41abba520f63ba7ddf8033d9afdd51bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae99b66e286f7df7bfa0d8c4435d89783" id="r_gae99b66e286f7df7bfa0d8c4435d89783"><td class="memItemLeft" align="right" valign="top"><a id="gae99b66e286f7df7bfa0d8c4435d89783" name="gae99b66e286f7df7bfa0d8c4435d89783"></a>
+NRResult&#160;</td><td class="memItemRight" valign="bottom"><b>NRGlassesControlGetCustomerSN</b> (NRHandle glasses_control_handle, char **out_customer_sn)</td></tr>
+<tr class="separator:gae99b66e286f7df7bfa0d8c4435d89783"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3dd4c2cb67e7aaf6c7c5c65fd5bcc04d" id="r_ga3dd4c2cb67e7aaf6c7c5c65fd5bcc04d"><td class="memItemLeft" align="right" valign="top"><a id="ga3dd4c2cb67e7aaf6c7c5c65fd5bcc04d" name="ga3dd4c2cb67e7aaf6c7c5c65fd5bcc04d"></a>
+NRResult&#160;</td><td class="memItemRight" valign="bottom"><b>NRGlassesControlGetProductWrapBoxSN</b> (NRHandle glasses_control_handle, char **out_wrap_box_sn)</td></tr>
+<tr class="separator:ga3dd4c2cb67e7aaf6c7c5c65fd5bcc04d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga871db22d9bcf5c3237999d3dbea63394" id="r_ga871db22d9bcf5c3237999d3dbea63394"><td class="memItemLeft" align="right" valign="top"><a id="ga871db22d9bcf5c3237999d3dbea63394" name="ga871db22d9bcf5c3237999d3dbea63394"></a>
+NRResult&#160;</td><td class="memItemRight" valign="bottom"><b>NRGlassesControlGetActivatedState</b> (NRHandle glasses_control_handle, int32_t *out_activate_state)</td></tr>
+<tr class="separator:ga871db22d9bcf5c3237999d3dbea63394"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf8e748dbfcab5c82254abbd8997cf9a8" id="r_gaf8e748dbfcab5c82254abbd8997cf9a8"><td class="memItemLeft" align="right" valign="top"><a id="gaf8e748dbfcab5c82254abbd8997cf9a8" name="gaf8e748dbfcab5c82254abbd8997cf9a8"></a>
+NRResult&#160;</td><td class="memItemRight" valign="bottom"><b>NRGlassesControlSetActivatedState</b> (NRHandle glasses_control_handle, int32_t activate_state)</td></tr>
+<tr class="separator:gaf8e748dbfcab5c82254abbd8997cf9a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga35ce1bf86887ab9db1e189f15d6ea8b4" id="r_ga35ce1bf86887ab9db1e189f15d6ea8b4"><td class="memItemLeft" align="right" valign="top"><a id="ga35ce1bf86887ab9db1e189f15d6ea8b4" name="ga35ce1bf86887ab9db1e189f15d6ea8b4"></a>
+NRResult&#160;</td><td class="memItemRight" valign="bottom"><b>NRGlassesControlSetActivationTime</b> (NRHandle glasses_control_handle, uint64_t activate_time)</td></tr>
+<tr class="separator:ga35ce1bf86887ab9db1e189f15d6ea8b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7bb90aa3d793ef6d68462fe064f1591e" id="r_ga7bb90aa3d793ef6d68462fe064f1591e"><td class="memItemLeft" align="right" valign="top"><a id="ga7bb90aa3d793ef6d68462fe064f1591e" name="ga7bb90aa3d793ef6d68462fe064f1591e"></a>
+NRResult&#160;</td><td class="memItemRight" valign="bottom"><b>NRGlassesControlSetDisplayState</b> (NRHandle glasses_control_handle, int32_t state)</td></tr>
+<tr class="separator:ga7bb90aa3d793ef6d68462fe064f1591e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafb46c93004d3e5b4ef3834adece2a145" id="r_gafb46c93004d3e5b4ef3834adece2a145"><td class="memItemLeft" align="right" valign="top"><a id="gafb46c93004d3e5b4ef3834adece2a145" name="gafb46c93004d3e5b4ef3834adece2a145"></a>
+NRResult&#160;</td><td class="memItemRight" valign="bottom"><b>NRGlassesControlGetVsyncState</b> (NRHandle glasses_control_handle, int32_t *out_state)</td></tr>
+<tr class="separator:gafb46c93004d3e5b4ef3834adece2a145"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga37ed37930877acffd42d1334cc657df1" id="r_ga37ed37930877acffd42d1334cc657df1"><td class="memItemLeft" align="right" valign="top"><a id="ga37ed37930877acffd42d1334cc657df1" name="ga37ed37930877acffd42d1334cc657df1"></a>
+NRResult&#160;</td><td class="memItemRight" valign="bottom"><b>NRGlassesControlSetVsyncState</b> (NRHandle glasses_control_handle, int32_t state)</td></tr>
+<tr class="separator:ga37ed37930877acffd42d1334cc657df1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf0b916dfeebdc8132cca6bffcfdcdcb9" id="r_gaf0b916dfeebdc8132cca6bffcfdcdcb9"><td class="memItemLeft" align="right" valign="top"><a id="gaf0b916dfeebdc8132cca6bffcfdcdcb9" name="gaf0b916dfeebdc8132cca6bffcfdcdcb9"></a>
+NRResult&#160;</td><td class="memItemRight" valign="bottom"><b>NRGlassesControlSetIMUFrequencyDivider</b> (NRHandle glasses_control_handle, int32_t divider)</td></tr>
+<tr class="separator:gaf0b916dfeebdc8132cca6bffcfdcdcb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1cae4742148f81df5737e07af0a2ea9b" id="r_ga1cae4742148f81df5737e07af0a2ea9b"><td class="memItemLeft" align="right" valign="top"><a id="ga1cae4742148f81df5737e07af0a2ea9b" name="ga1cae4742148f81df5737e07af0a2ea9b"></a>
+NRResult&#160;</td><td class="memItemRight" valign="bottom"><b>NRGlassesControlSetDisplayDefaultStartMode</b> (NRHandle glasses_control_handle, int32_t mode)</td></tr>
+<tr class="separator:ga1cae4742148f81df5737e07af0a2ea9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac64615bede03e9ccf1e494b24df3e831" id="r_gac64615bede03e9ccf1e494b24df3e831"><td class="memItemLeft" align="right" valign="top"><a id="gac64615bede03e9ccf1e494b24df3e831" name="gac64615bede03e9ccf1e494b24df3e831"></a>
+NRResult&#160;</td><td class="memItemRight" valign="bottom"><b>NRGlassesControlGetDisplayDefaultStartMode</b> (NRHandle glasses_control_handle, int32_t *out_mode)</td></tr>
+<tr class="separator:gac64615bede03e9ccf1e494b24df3e831"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga75a3beb8ce68b05fbda6d2929c0e009f" id="r_ga75a3beb8ce68b05fbda6d2929c0e009f"><td class="memItemLeft" align="right" valign="top"><a id="ga75a3beb8ce68b05fbda6d2929c0e009f" name="ga75a3beb8ce68b05fbda6d2929c0e009f"></a>
+NRResult&#160;</td><td class="memItemRight" valign="bottom"><b>NRGlassesControlGetDspVersion</b> (NRHandle glasses_control_handle, char *out_version, int32_t len)</td></tr>
+<tr class="separator:ga75a3beb8ce68b05fbda6d2929c0e009f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae2741a88f73a0ad3e49c135b52c1e49d" id="r_gae2741a88f73a0ad3e49c135b52c1e49d"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#gae2741a88f73a0ad3e49c135b52c1e49d">NRGlassesControlStartErrorsAndEventsReport</a> (NRHandle glasses_control_handle)</td></tr>
+<tr class="memdesc:gae2741a88f73a0ad3e49c135b52c1e49d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tell glasses' MCU to start to report Errors and Logs.  <br /></td></tr>
+<tr class="separator:gae2741a88f73a0ad3e49c135b52c1e49d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacda3be07ef916469a447f48d5eabe752" id="r_gacda3be07ef916469a447f48d5eabe752"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#gacda3be07ef916469a447f48d5eabe752">NRGlassesControlSetGlassesHardwareEventCallback</a> (NRHandle glasses_control_handle, <a class="el" href="group__glasses__control.html#ga5231d26ecabb9d5e63f0abf287050aba">NRGlassesControlGlassesHardwareEventCallback</a> data_callback, void *user_data)</td></tr>
+<tr class="memdesc:gacda3be07ef916469a447f48d5eabe752"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback method when glasses report a hardware event.  <br /></td></tr>
+<tr class="separator:gacda3be07ef916469a447f48d5eabe752"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4031eeb7b65db6c8369c27fbfd2110c4" id="r_ga4031eeb7b65db6c8369c27fbfd2110c4"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga4031eeb7b65db6c8369c27fbfd2110c4">NRGlassesControlSetNotifyDisplayChangeCallback</a> (NRHandle glasses_control_handle, <a class="el" href="group__glasses__control.html#ga472f62f88e4bbeebf29ad4732ee755a9">NRGlassesControlNotifyDisplayChangeCallback</a> data_callback, void *user_data)</td></tr>
+<tr class="memdesc:ga4031eeb7b65db6c8369c27fbfd2110c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback method .  <br /></td></tr>
+<tr class="separator:ga4031eeb7b65db6c8369c27fbfd2110c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacf49bfba02672c48c3ef7d0a54511623" id="r_gacf49bfba02672c48c3ef7d0a54511623"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#gacf49bfba02672c48c3ef7d0a54511623">NRGlassesControlSetDisplayBypassPsensorFlag</a> (NRHandle glasses_control_handle, int32_t flag)</td></tr>
+<tr class="separator:gacf49bfba02672c48c3ef7d0a54511623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga22f9e67bf99cc8bd5564bcd8976c72c6" id="r_ga22f9e67bf99cc8bd5564bcd8976c72c6"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga22f9e67bf99cc8bd5564bcd8976c72c6">NRGlassesControlGetDisplayBypassPsensorFlag</a> (NRHandle glasses_control_handle, int32_t *out_flag)</td></tr>
+<tr class="separator:ga22f9e67bf99cc8bd5564bcd8976c72c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga205533a9e9457ecb9e06cef50c7b391a" id="r_ga205533a9e9457ecb9e06cef50c7b391a"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga205533a9e9457ecb9e06cef50c7b391a">NRGlassesControlSetEnablePhysicalButtonSwitchDisplayModeFlag</a> (NRHandle glasses_control_handle, int32_t flag)</td></tr>
+<tr class="separator:ga205533a9e9457ecb9e06cef50c7b391a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1aec57949adc46b80519b807ee80fcc4" id="r_ga1aec57949adc46b80519b807ee80fcc4"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga1aec57949adc46b80519b807ee80fcc4">NRGlassesControlGetEnablePhysicalButtonSwitchDisplayModeFlag</a> (NRHandle glasses_control_handle, int32_t *out_flag)</td></tr>
+<tr class="separator:ga1aec57949adc46b80519b807ee80fcc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaddd9ec3d13bed86aa96360afb719b18d" id="r_gaddd9ec3d13bed86aa96360afb719b18d"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#gaddd9ec3d13bed86aa96360afb719b18d">NRGlassesControlGetIfGlassesDisplayFine</a> (NRHandle glasses_control_handle, int32_t *out_status)</td></tr>
+<tr class="separator:gaddd9ec3d13bed86aa96360afb719b18d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga731e89702ae270ee32479787cd9a12ee" id="r_ga731e89702ae270ee32479787cd9a12ee"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga731e89702ae270ee32479787cd9a12ee">NRGlassesControlGetSupportedDisplayModeMask</a> (NRHandle glasses_control_handle, uint64_t *out_mask)</td></tr>
+<tr class="separator:ga731e89702ae270ee32479787cd9a12ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacb673e16f8ca0664281e78e1c2d585fb" id="r_gacb673e16f8ca0664281e78e1c2d585fb"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#gacb673e16f8ca0664281e78e1c2d585fb">NRGlassesControlGetScreenStatus</a> (NRHandle glasses_control_handle, int32_t *out_status)</td></tr>
+<tr class="memdesc:gacb673e16f8ca0664281e78e1c2d585fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the status of glasses screen.  <br /></td></tr>
+<tr class="separator:gacb673e16f8ca0664281e78e1c2d585fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga18feb43801d45e04a1af43f1a39df5df" id="r_ga18feb43801d45e04a1af43f1a39df5df"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#ga18feb43801d45e04a1af43f1a39df5df">NRGlassesControlSetScreenStatusCallback</a> (NRHandle glasses_control_handle, NRGlassesControlScreenStatusCallback data_callback, void *user_data)</td></tr>
+<tr class="memdesc:ga18feb43801d45e04a1af43f1a39df5df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get temerature of glasses.  <br /></td></tr>
+<tr class="separator:ga18feb43801d45e04a1af43f1a39df5df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae0827e2fee6ab2d128e49ac5765313fa" id="r_gae0827e2fee6ab2d128e49ac5765313fa"><td class="memItemLeft" align="right" valign="top">NRResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__glasses__control.html#gae0827e2fee6ab2d128e49ac5765313fa">NRGlassesControlGetImuInterruptCount</a> (NRHandle glasses_control_handle, uint64_t *uint64_t)</td></tr>
+<tr class="memdesc:gae0827e2fee6ab2d128e49ac5765313fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the count of glasses imu interrupt count.  <br /></td></tr>
+<tr class="separator:gae0827e2fee6ab2d128e49ac5765313fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Functions for glasses control system. </p>
 <p>Example:</p>
 <div class="fragment"></div><!-- fragment --> <h2 class="groupheader">Typedef Documentation</h2>
-<a id="ga52aa6d76f152a2fa265833754179f7bd" name="ga52aa6d76f152a2fa265833754179f7bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga52aa6d76f152a2fa265833754179f7bd">&#9670;&#160;</a></span>NRGlassesControlGlassesDisconnectedCallback</h2>
+<a id="ga5231d26ecabb9d5e63f0abf287050aba" name="ga5231d26ecabb9d5e63f0abf287050aba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5231d26ecabb9d5e63f0abf287050aba">&#9670;&#160;</a></span>NRGlassesControlGlassesHardwareEventCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* NRGlassesControlGlassesDisconnectedCallback) (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> glasses_control_handle, void *user_data)</td>
+          <td class="memname">typedef void(* NRGlassesControlGlassesHardwareEventCallback) (NRHandle glasses_control_handle, uint32_t category_id, uint32_t event_id, uint32_t time_offset, uint32_t info_1, uint32_t info_2, char *description, uint32_t description_length, void *user_data)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The callback method type which will be called when the glasses is disconnected. </p>
+<p>The callback method type which will be called when received a glasses hardware event. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">glasses_control_handle</td><td>The handle of GlassesControl. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">category_id</td><td>lowest 2bytes are category ID </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">event_id</td><td>lowest 2bytes are effective </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">time_offset</td><td>lowest 2bytes are effective </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">info_1</td><td>lowest 2bytes are effective </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">info_2</td><td>lowest 2bytes are effective </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">description</td><td></td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">description_length</td><td></td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">user_data</td><td>The custom user data. </td></tr>
   </table>
   </dd>
@@ -241,72 +290,24 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga7e83b571302c65f0c3c8682e337584b0" name="ga7e83b571302c65f0c3c8682e337584b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7e83b571302c65f0c3c8682e337584b0">&#9670;&#160;</a></span>NRGlassesControlGlassesWearingCallback</h2>
+<a id="ga472f62f88e4bbeebf29ad4732ee755a9" name="ga472f62f88e4bbeebf29ad4732ee755a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga472f62f88e4bbeebf29ad4732ee755a9">&#9670;&#160;</a></span>NRGlassesControlNotifyDisplayChangeCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* NRGlassesControlGlassesWearingCallback) (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> glasses_control_handle, NRWearingStatus wearing_status, void *user_data)</td>
+          <td class="memname">typedef void(* NRGlassesControlNotifyDisplayChangeCallback) (NRHandle glasses_control_handle, int32_t change_status, void *user_data)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The callback method type which will be called when put on or take off the glasses. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">glasses_control_handle</td><td>The handle of GlassesControl. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">wearing_status</td><td>The status of wearing glasses. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">user_data</td><td>The custom user data. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ga62c5d7b9b0650f3eae69152dca93c803" name="ga62c5d7b9b0650f3eae69152dca93c803"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga62c5d7b9b0650f3eae69152dca93c803">&#9670;&#160;</a></span>NRGlassesControlNotifyQuitAppCallback</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef void(* NRGlassesControlNotifyQuitAppCallback) (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> glasses_control_handle, void *user_data, int32_t reason)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The callback method type which will be called when receive quit message. </p>
+<p>The callback method type which will be called when receive display device change. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">glasses_control_handle</td><td>The handle of GlassesControl. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">user_data</td><td>The custom user data. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">reason</td><td>@NRGlassesControlQuitReason </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ga8aa6235274092701650e1f2ccfae3ef0" name="ga8aa6235274092701650e1f2ccfae3ef0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8aa6235274092701650e1f2ccfae3ef0">&#9670;&#160;</a></span>NRGlassesControlOverTemperatureCallback</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef void(* NRGlassesControlOverTemperatureCallback) (<a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> glasses_control_handle, int32_t status, void *user_data)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The callback method type which will be called when the temperature of the glasses is above the threshold or not. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">glasses_control_handle</td><td>The handle of GlassesControl. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">user_data</td><td>The custom user data. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>0: the temperature is below the threshold 1:the temperature is above the threshold </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">change_status</td><td>1:reserved 2:display remove 3:display change </td></tr>
   </table>
   </dd>
 </dl>
@@ -314,77 +315,23 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga8eb1d524794e6095978323a316ead1bd" name="ga8eb1d524794e6095978323a316ead1bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8eb1d524794e6095978323a316ead1bd">&#9670;&#160;</a></span>NRGlassesControlCreate()</h2>
+<a id="ga8cff3636986449fdb06bd07c5bf0b949" name="ga8cff3636986449fdb06bd07c5bf0b949"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8cff3636986449fdb06bd07c5bf0b949">&#9670;&#160;</a></span>NRGlassesControlGet2D3DMode()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">NRResult NRGlassesControlCreate </td>
+          <td class="memname">NRResult NRGlassesControlGet2D3DMode </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a> *&#160;</td>
-          <td class="paramname"><em>out_glasses_control_handle</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create the GlassesControl system object. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">out_glasses_control_handle</td><td>The handle of GlassesControl. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The result of operation. </dd></dl>
-
-</div>
-</div>
-<a id="ga3a68e587413c9875ac4600045778a7c4" name="ga3a68e587413c9875ac4600045778a7c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3a68e587413c9875ac4600045778a7c4">&#9670;&#160;</a></span>NRGlassesControlDestroy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">NRResult NRGlassesControlDestroy </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a>&#160;</td>
-          <td class="paramname"><em>glasses_control_handle</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Release memory used by the GlassesControl system object. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">glasses_control_handle</td><td>The handle of GlassesControl. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The result of operation. </dd></dl>
-
-</div>
-</div>
-<a id="ga67a77137ab97446e5563ac320fb15722" name="ga67a77137ab97446e5563ac320fb15722"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga67a77137ab97446e5563ac320fb15722">&#9670;&#160;</a></span>NRGlassesControlGetBrightness()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">NRResult NRGlassesControlGetBrightness </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a>&#160;</td>
+          <td class="paramtype">NRHandle&#160;</td>
           <td class="paramname"><em>glasses_control_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int32_t *&#160;</td>
-          <td class="paramname"><em>out_brightness</em>&#160;</td>
+          <td class="paramname"><em>out_mode</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -394,11 +341,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get brightness value of glasses screen. </p>
+<p>Get the mode(2D/3D) of glasses screen. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">glasses_control_handle</td><td>The handle of glasses control object. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out_brightness</td><td>the value of brightness. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out_mode</td><td>The value of mode. the old out_mode. the mode value contains info more than 2d/3d mode such as: 1:2d 1920x1080 60Hz, 3:3d 3840x1080 60Hz ... each call will communicate with glasses through glasses MCU channel </td></tr>
   </table>
   </dd>
 </dl>
@@ -406,23 +353,75 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga0c2106090a4f07a201e160fc0c2e5583" name="ga0c2106090a4f07a201e160fc0c2e5583"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0c2106090a4f07a201e160fc0c2e5583">&#9670;&#160;</a></span>NRGlassesControlGetBrightnessLevelNumber()</h2>
+<a id="ga3b23e4aa38b77a3d21f616e93c85b6cf" name="ga3b23e4aa38b77a3d21f616e93c85b6cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3b23e4aa38b77a3d21f616e93c85b6cf">&#9670;&#160;</a></span>NRGlassesControlGet7211ICStatus()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">NRResult NRGlassesControlGetBrightnessLevelNumber </td>
+          <td class="memname">NRResult NRGlassesControlGet7211ICStatus </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a>&#160;</td>
+          <td class="paramtype">NRHandle&#160;</td>
+          <td class="paramname"><em>glasses_control_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>flag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>out_status</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get status of glasses ic chip. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">glasses_control_handle</td><td>The handle of glasses control object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flag.</td><td></td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out_status</td><td>The buffer used to write status. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>The lenth of buffer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The result of operation. </dd></dl>
+
+</div>
+</div>
+<a id="ga22f9e67bf99cc8bd5564bcd8976c72c6" name="ga22f9e67bf99cc8bd5564bcd8976c72c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga22f9e67bf99cc8bd5564bcd8976c72c6">&#9670;&#160;</a></span>NRGlassesControlGetDisplayBypassPsensorFlag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NRResult NRGlassesControlGetDisplayBypassPsensorFlag </td>
+          <td>(</td>
+          <td class="paramtype">NRHandle&#160;</td>
           <td class="paramname"><em>glasses_control_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int32_t *&#160;</td>
-          <td class="paramname"><em>out_brightness_level_number</em>&#160;</td>
+          <td class="paramname"><em>out_flag</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -431,73 +430,32 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Get brightness level number of glasses screen. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">glasses_control_handle</td><td>The handle of glasses control object. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out_brightness</td><td>the value of brightness level num. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The result of operation. </dd></dl>
-
-</div>
-</div>
-<a id="ga702c3573a511932a042bd3b1ebce214b" name="ga702c3573a511932a042bd3b1ebce214b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga702c3573a511932a042bd3b1ebce214b">&#9670;&#160;</a></span>NRGlassesControlGetDisplayStereoMode()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">NRResult NRGlassesControlGetDisplayStereoMode </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a>&#160;</td>
-          <td class="paramname"><em>glasses_control_handle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">NRDisplayStereoMode *&#160;</td>
-          <td class="paramname"><em>out_brightness_level_number</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the stereo mode(2D/3D) of glasses screen. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">glasses_control_handle</td><td>The handle of glasses control object. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out_mode</td><td>returns the value that is cached in the SDK runtime each call will not trigger any communication with glasses </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">flag</td><td>0: not bypassed 1: pypass </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="ga86f5dbaab173a9bbc8adf006ae695de0" name="ga86f5dbaab173a9bbc8adf006ae695de0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga86f5dbaab173a9bbc8adf006ae695de0">&#9670;&#160;</a></span>NRGlassesControlGetElectrochromicLevel()</h2>
+<a id="ga4ad33a5edea11610af1682a8cb57cbd3" name="ga4ad33a5edea11610af1682a8cb57cbd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4ad33a5edea11610af1682a8cb57cbd3">&#9670;&#160;</a></span>NRGlassesControlGetDuty()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">NRResult NRGlassesControlGetElectrochromicLevel </td>
+          <td class="memname">NRResult NRGlassesControlGetDuty </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a>&#160;</td>
+          <td class="paramtype">NRHandle&#160;</td>
           <td class="paramname"><em>glasses_control_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int32_t *&#160;</td>
-          <td class="paramname"><em>out_level</em>&#160;</td>
+          <td class="paramname"><em>out_duty</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -507,11 +465,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get current electrochromic level of glasses. </p>
+<p>Get duty cycle of glasses screen. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">glasses_control_handle</td><td>The handle of glasses control object. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out_level</td><td>the value of current electrochromic level. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out_duty</td><td>the value of duty. </td></tr>
   </table>
   </dd>
 </dl>
@@ -519,23 +477,63 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga5b5c7792d77d5c9814871ad960461a0b" name="ga5b5c7792d77d5c9814871ad960461a0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5b5c7792d77d5c9814871ad960461a0b">&#9670;&#160;</a></span>NRGlassesControlGetElectrochromicTotalLevel()</h2>
+<a id="ga1aec57949adc46b80519b807ee80fcc4" name="ga1aec57949adc46b80519b807ee80fcc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1aec57949adc46b80519b807ee80fcc4">&#9670;&#160;</a></span>NRGlassesControlGetEnablePhysicalButtonSwitchDisplayModeFlag()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">NRResult NRGlassesControlGetElectrochromicTotalLevel </td>
+          <td class="memname">NRResult NRGlassesControlGetEnablePhysicalButtonSwitchDisplayModeFlag </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a>&#160;</td>
+          <td class="paramtype">NRHandle&#160;</td>
           <td class="paramname"><em>glasses_control_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int32_t *&#160;</td>
-          <td class="paramname"><em>out_total_level</em>&#160;</td>
+          <td class="paramname"><em>out_flag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">flag</td><td>0: disabled 1: enabled </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gafdfe6d3ac4691d23845b0723fcf83aec" name="gafdfe6d3ac4691d23845b0723fcf83aec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafdfe6d3ac4691d23845b0723fcf83aec">&#9670;&#160;</a></span>NRGlassesControlGetGlassesID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NRResult NRGlassesControlGetGlassesID </td>
+          <td>(</td>
+          <td class="paramtype">NRHandle&#160;</td>
+          <td class="paramname"><em>glasses_control_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>out_glasses_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -545,11 +543,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the total electrochromic level of glasses. </p>
+<p>Get glasses id. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">glasses_control_handle</td><td>The handle of glasses control object. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out_total_level</td><td>the value of the total electrochromic level. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out_glasses_id</td><td>The buffer used to write id. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>The lenth of buffer. </td></tr>
   </table>
   </dd>
 </dl>
@@ -557,16 +556,178 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gab50ef7906f3b2dacca8516300151a1a5" name="gab50ef7906f3b2dacca8516300151a1a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab50ef7906f3b2dacca8516300151a1a5">&#9670;&#160;</a></span>NRGlassesControlGetPsensorIsWearing()</h2>
+<a id="gac54dd7949536cda9f6a0d773b80921b3" name="gac54dd7949536cda9f6a0d773b80921b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac54dd7949536cda9f6a0d773b80921b3">&#9670;&#160;</a></span>NRGlassesControlGetGlassesSN()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">NRResult NRGlassesControlGetPsensorIsWearing </td>
+          <td class="memname">NRResult NRGlassesControlGetGlassesSN </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a>&#160;</td>
+          <td class="paramtype">NRHandle&#160;</td>
+          <td class="paramname"><em>glasses_control_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>out_glasses_sn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get glasses SN. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">glasses_control_handle</td><td>The handle of glasses control object. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out_glasses_sn</td><td>The buffer used to write sn code. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>The lenth of buffer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The result of operation. </dd></dl>
+
+</div>
+</div>
+<a id="gad97e75b976d2fb636d3343f652c35c78" name="gad97e75b976d2fb636d3343f652c35c78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad97e75b976d2fb636d3343f652c35c78">&#9670;&#160;</a></span>NRGlassesControlGetHWVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NRResult NRGlassesControlGetHWVersion </td>
+          <td>(</td>
+          <td class="paramtype">NRHandle&#160;</td>
+          <td class="paramname"><em>glasses_control_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>out_version</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get glasses hardware version. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">glasses_control_handle</td><td>The handle of glasses control object. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out_version</td><td>The version buffer used to write version. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>The lenth of version buffer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The result of operation. </dd></dl>
+
+</div>
+</div>
+<a id="gaddd9ec3d13bed86aa96360afb719b18d" name="gaddd9ec3d13bed86aa96360afb719b18d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaddd9ec3d13bed86aa96360afb719b18d">&#9670;&#160;</a></span>NRGlassesControlGetIfGlassesDisplayFine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NRResult NRGlassesControlGetIfGlassesDisplayFine </td>
+          <td>(</td>
+          <td class="paramtype">NRHandle&#160;</td>
+          <td class="paramname"><em>glasses_control_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>out_status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">out_status</td><td>0: fine 1:not fine </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gae0827e2fee6ab2d128e49ac5765313fa" name="gae0827e2fee6ab2d128e49ac5765313fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae0827e2fee6ab2d128e49ac5765313fa">&#9670;&#160;</a></span>NRGlassesControlGetImuInterruptCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NRResult NRGlassesControlGetImuInterruptCount </td>
+          <td>(</td>
+          <td class="paramtype">NRHandle&#160;</td>
+          <td class="paramname"><em>glasses_control_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t * uint64_t&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the count of glasses imu interrupt count. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">glasses_control_handle</td><td>The handle of glasses control object. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out_count</td><td>The value of imu interrupt count. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The result of operation. </dd></dl>
+
+</div>
+</div>
+<a id="ga0f7af96095631cf70be65919859614f0" name="ga0f7af96095631cf70be65919859614f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0f7af96095631cf70be65919859614f0">&#9670;&#160;</a></span>NRGlassesControlGetLightIntensityState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NRResult NRGlassesControlGetLightIntensityState </td>
+          <td>(</td>
+          <td class="paramtype">NRHandle&#160;</td>
           <td class="paramname"><em>glasses_control_handle</em>, </td>
         </tr>
         <tr>
@@ -583,12 +744,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get psensor is close head state. </p>
-<p>Note: state 0 means the glasses is not close to head(not wearing) Note: state 1 means the glasses is close to head(wearing)</p>
+<p>stop light intensity notify. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">glasses_control_handle</td><td>The handle of glasses control object. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out_state</td><td>is wearing or not </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">glasses_control_handle</td><td>The handle of glasses control object.. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out_state</td><td>The state of light intensity function. </td></tr>
   </table>
   </dd>
 </dl>
@@ -596,23 +756,23 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga3ab1e82b7403e54b90b9add4187e68cf" name="ga3ab1e82b7403e54b90b9add4187e68cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3ab1e82b7403e54b90b9add4187e68cf">&#9670;&#160;</a></span>NRGlassesControlGetPsensorSwitchState()</h2>
+<a id="gacb673e16f8ca0664281e78e1c2d585fb" name="gacb673e16f8ca0664281e78e1c2d585fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacb673e16f8ca0664281e78e1c2d585fb">&#9670;&#160;</a></span>NRGlassesControlGetScreenStatus()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">NRResult NRGlassesControlGetPsensorSwitchState </td>
+          <td class="memname">NRResult NRGlassesControlGetScreenStatus </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a>&#160;</td>
+          <td class="paramtype">NRHandle&#160;</td>
           <td class="paramname"><em>glasses_control_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int32_t *&#160;</td>
-          <td class="paramname"><em>out_state</em>&#160;</td>
+          <td class="paramname"><em>out_status</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -622,12 +782,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get psensor switch state. </p>
-<p>Note: state 0 means the glasses omit psensor data. In other words, psensor is not making effects Note: state 1 means the glasses psensor is working</p>
+<p>Get the status of glasses screen. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">glasses_control_handle</td><td>The handle of glasses control object. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out_state</td><td>psensor switch state </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out_status</td><td>The value of screen or oled status,0:close, 1:open </td></tr>
   </table>
   </dd>
 </dl>
@@ -635,23 +794,63 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga415895e8e9c2edf77f935c5f7841861e" name="ga415895e8e9c2edf77f935c5f7841861e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga415895e8e9c2edf77f935c5f7841861e">&#9670;&#160;</a></span>NRGlassesControlGetScreenColorCalibrationType()</h2>
+<a id="ga731e89702ae270ee32479787cd9a12ee" name="ga731e89702ae270ee32479787cd9a12ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga731e89702ae270ee32479787cd9a12ee">&#9670;&#160;</a></span>NRGlassesControlGetSupportedDisplayModeMask()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">NRResult NRGlassesControlGetScreenColorCalibrationType </td>
+          <td class="memname">NRResult NRGlassesControlGetSupportedDisplayModeMask </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a>&#160;</td>
+          <td class="paramtype">NRHandle&#160;</td>
           <td class="paramname"><em>glasses_control_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t *&#160;</td>
+          <td class="paramname"><em>out_mask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">out_mask</td><td>DISPLAY_2D_1920_1080_60 = 0x1 DISPLAY_3D_3840_540_120 = 0x2 DISPLAY_3D_3840_1080_60 = 0x4 DISPLAY_3D_3840_1080_72 = 0x8 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga4a95078d9d2270787e3c99f493d6548d" name="ga4a95078d9d2270787e3c99f493d6548d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4a95078d9d2270787e3c99f493d6548d">&#9670;&#160;</a></span>NRGlassesControlGetTemperatureData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NRResult NRGlassesControlGetTemperatureData </td>
+          <td>(</td>
+          <td class="paramtype">NRHandle&#160;</td>
+          <td class="paramname"><em>glasses_control_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int32_t *&#160;</td>
-          <td class="paramname"><em>out_type</em>&#160;</td>
+          <td class="paramname"><em>out_temperature</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -661,11 +860,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the color calibration type of the screen. </p>
+<p>Get temerature of glasses. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">glasses_control_handle</td><td>The handle of glasses control object. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out_type</td><td>the color calibration type of the screen </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">position</td><td>Which part of glasses </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out_temperature</td><td>The value of temperature </td></tr>
   </table>
   </dd>
 </dl>
@@ -673,23 +873,29 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga863f400246f5d82d0bac9d442211124a" name="ga863f400246f5d82d0bac9d442211124a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga863f400246f5d82d0bac9d442211124a">&#9670;&#160;</a></span>NRGlassesControlGetTemperatureLevel()</h2>
+<a id="gab9e95807930d9e9bc03a3e3280175a35" name="gab9e95807930d9e9bc03a3e3280175a35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab9e95807930d9e9bc03a3e3280175a35">&#9670;&#160;</a></span>NRGlassesControlGetVersion()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">NRResult NRGlassesControlGetTemperatureLevel </td>
+          <td class="memname">NRResult NRGlassesControlGetVersion </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a>&#160;</td>
+          <td class="paramtype">NRHandle&#160;</td>
           <td class="paramname"><em>glasses_control_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">NRGlassesTemperatureLevel *&#160;</td>
-          <td class="paramname"><em>temperature_level</em>&#160;</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>out_version</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -699,11 +905,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the temperature level of the glasses. </p>
+<p>Get glasses firmware version. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">glasses_control_handle</td><td>The handle of GlassesControl. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">temperature_level</td><td>The temperature level. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">glasses_control_handle</td><td>The handle of glasses control object. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out_version</td><td>The version buffer used to write version. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>The lenth of version buffer. </td></tr>
   </table>
   </dd>
 </dl>
@@ -711,77 +918,23 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga2fd4fcf56ab7d0776c7e6f9076cc91e0" name="ga2fd4fcf56ab7d0776c7e6f9076cc91e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2fd4fcf56ab7d0776c7e6f9076cc91e0">&#9670;&#160;</a></span>NRGlassesControlPause()</h2>
+<a id="gaf370c7ece8c34be79692b710eccc9fe9" name="gaf370c7ece8c34be79692b710eccc9fe9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf370c7ece8c34be79692b710eccc9fe9">&#9670;&#160;</a></span>NRGlassesControlSet2D3DMode()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">NRResult NRGlassesControlPause </td>
+          <td class="memname">NRResult NRGlassesControlSet2D3DMode </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a>&#160;</td>
-          <td class="paramname"><em>glasses_control_handle</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Pause the GlassesControl system object. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">glasses_control_handle</td><td>The handle of GlassesControl. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The result of operation. </dd></dl>
-
-</div>
-</div>
-<a id="ga337c748e23e91ce8f03adc14bcddca5d" name="ga337c748e23e91ce8f03adc14bcddca5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga337c748e23e91ce8f03adc14bcddca5d">&#9670;&#160;</a></span>NRGlassesControlResume()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">NRResult NRGlassesControlResume </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a>&#160;</td>
-          <td class="paramname"><em>glasses_control_handle</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Resume the GlassesControl system object. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">glasses_control_handle</td><td>The handle of GlassesControl. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The result of operation. </dd></dl>
-
-</div>
-</div>
-<a id="ga470b88e92995bbbcbe37054f5a0fc201" name="ga470b88e92995bbbcbe37054f5a0fc201"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga470b88e92995bbbcbe37054f5a0fc201">&#9670;&#160;</a></span>NRGlassesControlSetBrightness()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">NRResult NRGlassesControlSetBrightness </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a>&#160;</td>
+          <td class="paramtype">NRHandle&#160;</td>
           <td class="paramname"><em>glasses_control_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int32_t&#160;</td>
-          <td class="paramname"><em>brightness</em>&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -791,11 +944,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set brightness value of glasses screen. </p>
+<p>Set mode of glasses screen. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">glasses_control_handle</td><td>The handle of glasses control object. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">brightness</td><td>the value of brightness. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>The value of mode. </td></tr>
   </table>
   </dd>
 </dl>
@@ -803,113 +956,57 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga1dc4ac927012e8c01e9a55be84fd9c4a" name="ga1dc4ac927012e8c01e9a55be84fd9c4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1dc4ac927012e8c01e9a55be84fd9c4a">&#9670;&#160;</a></span>NRGlassesControlSetBrightnessKeyCallback()</h2>
+<a id="gacf49bfba02672c48c3ef7d0a54511623" name="gacf49bfba02672c48c3ef7d0a54511623"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacf49bfba02672c48c3ef7d0a54511623">&#9670;&#160;</a></span>NRGlassesControlSetDisplayBypassPsensorFlag()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">NRResult NRGlassesControlSetBrightnessKeyCallback </td>
+          <td class="memname">NRResult NRGlassesControlSetDisplayBypassPsensorFlag </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a>&#160;</td>
-          <td class="paramname"><em>glasses_control_handle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__glasses__control.html#ga310408bf618da94a66e5fc93377176f9">NRGlassesControlBrightnessKeyCallback</a>&#160;</td>
-          <td class="paramname"><em>callback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>user_data</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set the callback method . </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">glasses_control_handle</td><td>The handle of glasses control object. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>The callback function. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">user_data</td><td>The data which will be returned when callback is triggered. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The result of operation. </dd></dl>
-
-</div>
-</div>
-<a id="gaa3a2d7991925eca73f29fc10819be954" name="gaa3a2d7991925eca73f29fc10819be954"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa3a2d7991925eca73f29fc10819be954">&#9670;&#160;</a></span>NRGlassesControlSetBrightnessValueCallback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">NRResult NRGlassesControlSetBrightnessValueCallback </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a>&#160;</td>
-          <td class="paramname"><em>glasses_control_handle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__glasses__control.html#ga34b5601901f6b1418799a4030850ac1f">NRGlassesControlBrightnessValueCallback</a>&#160;</td>
-          <td class="paramname"><em>callback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>user_data</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set the callback method . </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">glasses_control_handle</td><td>The handle of glasses control object. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>The callback function. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">user_data</td><td>The data which will be returned when callback is triggered. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The result of operation. </dd></dl>
-
-</div>
-</div>
-<a id="gaee03a33014e3c97ad4f4f6e98ec78bfb" name="gaee03a33014e3c97ad4f4f6e98ec78bfb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaee03a33014e3c97ad4f4f6e98ec78bfb">&#9670;&#160;</a></span>NRGlassesControlSetElectrochromicLevel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">NRResult NRGlassesControlSetElectrochromicLevel </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a>&#160;</td>
+          <td class="paramtype">NRHandle&#160;</td>
           <td class="paramname"><em>glasses_control_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int32_t&#160;</td>
-          <td class="paramname"><em>level</em>&#160;</td>
+          <td class="paramname"><em>flag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">flag</td><td>0: not bypassed 1: pypass </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga5b100a322ffc78d24806b5642a7943d8" name="ga5b100a322ffc78d24806b5642a7943d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5b100a322ffc78d24806b5642a7943d8">&#9670;&#160;</a></span>NRGlassesControlSetDuty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NRResult NRGlassesControlSetDuty </td>
+          <td>(</td>
+          <td class="paramtype">NRHandle&#160;</td>
+          <td class="paramname"><em>glasses_control_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>duty</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -919,11 +1016,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set the electrochromic level of glasses. </p>
+<p>Set duty cycle of glasses screen. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">glasses_control_handle</td><td>The handle of glasses control object. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>the value of electrochromic level. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">duty</td><td>the value of duty. </td></tr>
   </table>
   </dd>
 </dl>
@@ -931,22 +1028,56 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga14c7b6f3d23eaaf9a6278f7ab3b9d0d4" name="ga14c7b6f3d23eaaf9a6278f7ab3b9d0d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga14c7b6f3d23eaaf9a6278f7ab3b9d0d4">&#9670;&#160;</a></span>NRGlassesControlSetGlassesDisconnectedCallback()</h2>
+<a id="ga205533a9e9457ecb9e06cef50c7b391a" name="ga205533a9e9457ecb9e06cef50c7b391a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga205533a9e9457ecb9e06cef50c7b391a">&#9670;&#160;</a></span>NRGlassesControlSetEnablePhysicalButtonSwitchDisplayModeFlag()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">NRResult NRGlassesControlSetGlassesDisconnectedCallback </td>
+          <td class="memname">NRResult NRGlassesControlSetEnablePhysicalButtonSwitchDisplayModeFlag </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a>&#160;</td>
+          <td class="paramtype">NRHandle&#160;</td>
           <td class="paramname"><em>glasses_control_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__glasses__control.html#ga52aa6d76f152a2fa265833754179f7bd">NRGlassesControlGlassesDisconnectedCallback</a>&#160;</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>flag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">[int]</td><td>flag 0: disabled 1: enabled </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gacda3be07ef916469a447f48d5eabe752" name="gacda3be07ef916469a447f48d5eabe752"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacda3be07ef916469a447f48d5eabe752">&#9670;&#160;</a></span>NRGlassesControlSetGlassesHardwareEventCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NRResult NRGlassesControlSetGlassesHardwareEventCallback </td>
+          <td>(</td>
+          <td class="paramtype">NRHandle&#160;</td>
+          <td class="paramname"><em>glasses_control_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__glasses__control.html#ga5231d26ecabb9d5e63f0abf287050aba">NRGlassesControlGlassesHardwareEventCallback</a>&#160;</td>
           <td class="paramname"><em>data_callback</em>, </td>
         </tr>
         <tr>
@@ -963,53 +1094,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set the callback method when the glasses is disconnected. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">glasses_control_handle</td><td>The handle of GlassesControl. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">data_callback</td><td>The callback method. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">user_data</td><td>The data which will be returned when the callback is triggered. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The result of operation. </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000009">Deprecated:</a></b></dt><dd>Use NRGlassesControlSetNotifyQuitAppCallback(...) instead. </dd></dl>
-
-</div>
-</div>
-<a id="ga1b7183b5baa07ff75e5dd4c9431cbc9f" name="ga1b7183b5baa07ff75e5dd4c9431cbc9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1b7183b5baa07ff75e5dd4c9431cbc9f">&#9670;&#160;</a></span>NRGlassesControlSetGlassesWearingCallback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">NRResult NRGlassesControlSetGlassesWearingCallback </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a>&#160;</td>
-          <td class="paramname"><em>glasses_control_handle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__glasses__control.html#ga7e83b571302c65f0c3c8682e337584b0">NRGlassesControlGlassesWearingCallback</a>&#160;</td>
-          <td class="paramname"><em>data_callback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>user_data</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set the callback method when put on or take off the glasses. </p>
+<p>Set the callback method when glasses report a hardware event. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">glasses_control_handle</td><td>The handle of GlassesControl. </td></tr>
@@ -1022,150 +1107,22 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga2c20d20f7aff3ebe8c17a04ac5d5ba31" name="ga2c20d20f7aff3ebe8c17a04ac5d5ba31"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2c20d20f7aff3ebe8c17a04ac5d5ba31">&#9670;&#160;</a></span>NRGlassesControlSetHostType()</h2>
+<a id="gabfc30910c1a7deebbd612ed8d0b9091b" name="gabfc30910c1a7deebbd612ed8d0b9091b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabfc30910c1a7deebbd612ed8d0b9091b">&#9670;&#160;</a></span>NRGlassesControlSetLightIntensityCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">NRResult NRGlassesControlSetHostType </td>
+          <td class="memname">NRResult NRGlassesControlSetLightIntensityCallback </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a>&#160;</td>
+          <td class="paramtype">NRHandle&#160;</td>
           <td class="paramname"><em>glasses_control_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int32_t&#160;</td>
-          <td class="paramname"><em>type</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set host type. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">glasses_control_handle</td><td>The handle of glasses control object. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>the type of the host </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The result of operation. </dd></dl>
-
-</div>
-</div>
-<a id="ga4796d514735140780d4249714a1a5c71" name="ga4796d514735140780d4249714a1a5c71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4796d514735140780d4249714a1a5c71">&#9670;&#160;</a></span>NRGlassesControlSetKeyEventCallback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">NRResult NRGlassesControlSetKeyEventCallback </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a>&#160;</td>
-          <td class="paramname"><em>glasses_control_handle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__glasses__control.html#ga5bc44f65187de21bd0ee09d56bc20f0a">NRGlassesControlKeyEventCallback</a>&#160;</td>
-          <td class="paramname"><em>key_event_callback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>user_data</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set the callback method . </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">glasses_control_handle</td><td>The handle of glasses control object. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key_event_callback</td><td>The callback function. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">user_data</td><td>The data which will be returned when callback is triggered. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The result of operation. </dd></dl>
-
-</div>
-</div>
-<a id="gaedfce2b1a9fe475cf4c8accf60d3f43a" name="gaedfce2b1a9fe475cf4c8accf60d3f43a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaedfce2b1a9fe475cf4c8accf60d3f43a">&#9670;&#160;</a></span>NRGlassesControlSetNotifyQuitAppCallback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">NRResult NRGlassesControlSetNotifyQuitAppCallback </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a>&#160;</td>
-          <td class="paramname"><em>glasses_control_handle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__glasses__control.html#ga62c5d7b9b0650f3eae69152dca93c803">NRGlassesControlNotifyQuitAppCallback</a>&#160;</td>
-          <td class="paramname"><em>data_callback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>user_data</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set the callback method which will be called when receive quit message. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">glasses_control_handle</td><td>The handle of GlassesControl. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">data_callback</td><td>The callback method. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">user_data</td><td>The data which will be returned when the callback is triggered. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The result of operation. </dd></dl>
-
-</div>
-</div>
-<a id="gace3576e98fbfb96432d27344659e1e12" name="gace3576e98fbfb96432d27344659e1e12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gace3576e98fbfb96432d27344659e1e12">&#9670;&#160;</a></span>NRGlassesControlSetOverTemperatureCallback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">NRResult NRGlassesControlSetOverTemperatureCallback </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a>&#160;</td>
-          <td class="paramname"><em>glasses_control_handle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__glasses__control.html#ga8aa6235274092701650e1f2ccfae3ef0">NRGlassesControlOverTemperatureCallback</a>&#160;</td>
+          <td class="paramtype">NRGlassesControlLightIntensityCallback&#160;</td>
           <td class="paramname"><em>data_callback</em>, </td>
         </tr>
         <tr>
@@ -1195,16 +1152,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga7d05b443c5b879dad9a3dd35429ae3e7" name="ga7d05b443c5b879dad9a3dd35429ae3e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7d05b443c5b879dad9a3dd35429ae3e7">&#9670;&#160;</a></span>NRGlassesControlSetPsensorSwitchState()</h2>
+<a id="gaca46fa54201671ba7822e8fb9bbae9b7" name="gaca46fa54201671ba7822e8fb9bbae9b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaca46fa54201671ba7822e8fb9bbae9b7">&#9670;&#160;</a></span>NRGlassesControlSetLightIntensityState()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">NRResult NRGlassesControlSetPsensorSwitchState </td>
+          <td class="memname">NRResult NRGlassesControlSetLightIntensityState </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a>&#160;</td>
+          <td class="paramtype">NRHandle&#160;</td>
           <td class="paramname"><em>glasses_control_handle</em>, </td>
         </tr>
         <tr>
@@ -1221,12 +1178,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set psensor switch state. </p>
-<p>Note: state 0 means the glasses omit psensor data. In other words, psensor is not making effects Note: state 1 means the glasses psensor is working</p>
+<p>Enable/Disable light intensity notify. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">glasses_control_handle</td><td>The handle of glasses control object. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">state</td><td>psensor switch state </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">glasses_control_handle</td><td>The handle of glasses control object.. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">state</td><td>0 for disable, 1 for enable. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1234,23 +1190,23 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga338f5cddf5efd8594148a97bddd01e43" name="ga338f5cddf5efd8594148a97bddd01e43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga338f5cddf5efd8594148a97bddd01e43">&#9670;&#160;</a></span>NRGlassesControlSetScreenColorCalibrationType()</h2>
+<a id="gaf9a0363ae314d43500198f35ef483552" name="gaf9a0363ae314d43500198f35ef483552"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf9a0363ae314d43500198f35ef483552">&#9670;&#160;</a></span>NRGlassesControlSetLogTrigger()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">NRResult NRGlassesControlSetScreenColorCalibrationType </td>
+          <td class="memname">NRResult NRGlassesControlSetLogTrigger </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a>&#160;</td>
+          <td class="paramtype">NRHandle&#160;</td>
           <td class="paramname"><em>glasses_control_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int32_t&#160;</td>
-          <td class="paramname"><em>type</em>&#160;</td>
+          <td class="paramname"><em>state</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1260,11 +1216,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set the color calibration type of the screen. </p>
+<p>Trigger a log write event. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">glasses_control_handle</td><td>The handle of glasses control object. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>the color calibration type of the screen </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">state.</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1272,89 +1228,29 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gac9f91746de6b9f9d5bf9110f7695aa97" name="gac9f91746de6b9f9d5bf9110f7695aa97"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac9f91746de6b9f9d5bf9110f7695aa97">&#9670;&#160;</a></span>NRGlassesControlStart()</h2>
+<a id="ga4031eeb7b65db6c8369c27fbfd2110c4" name="ga4031eeb7b65db6c8369c27fbfd2110c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4031eeb7b65db6c8369c27fbfd2110c4">&#9670;&#160;</a></span>NRGlassesControlSetNotifyDisplayChangeCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">NRResult NRGlassesControlStart </td>
+          <td class="memname">NRResult NRGlassesControlSetNotifyDisplayChangeCallback </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a>&#160;</td>
-          <td class="paramname"><em>glasses_control_handle</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Start the GlassesControl system object. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">glasses_control_handle</td><td>The handle of GlassesControl. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The result of operation. </dd></dl>
-
-</div>
-</div>
-<a id="ga4087b5c5ddfe0a50630017ea6ff16519" name="ga4087b5c5ddfe0a50630017ea6ff16519"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4087b5c5ddfe0a50630017ea6ff16519">&#9670;&#160;</a></span>NRGlassesControlStop()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">NRResult NRGlassesControlStop </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a>&#160;</td>
-          <td class="paramname"><em>glasses_control_handle</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Stop the GlassesControl system object. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">glasses_control_handle</td><td>The handle of GlassesControl. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The result of operation. </dd></dl>
-
-</div>
-</div>
-<a id="ga9081c6ad70325210c896958f49a75c3b" name="ga9081c6ad70325210c896958f49a75c3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9081c6ad70325210c896958f49a75c3b">&#9670;&#160;</a></span>NRGlassesControlToggleKey()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">NRResult NRGlassesControlToggleKey </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__common.html#ga1e80a6e35a8834502785b9a0a66b3611">NRHandle</a>&#160;</td>
+          <td class="paramtype">NRHandle&#160;</td>
           <td class="paramname"><em>glasses_control_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int32_t&#160;</td>
-          <td class="paramname"><em>key_type</em>, </td>
+          <td class="paramtype"><a class="el" href="group__glasses__control.html#ga472f62f88e4bbeebf29ad4732ee755a9">NRGlassesControlNotifyDisplayChangeCallback</a>&#160;</td>
+          <td class="paramname"><em>data_callback</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int32_t&#160;</td>
-          <td class="paramname"><em>key_function</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int32_t&#160;</td>
-          <td class="paramname"><em>flag</em>&#160;</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user_data</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1364,13 +1260,84 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Toogle(enable or disable) the key of glasses . </p>
+<p>Set the callback method . </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">glasses_control_handle</td><td>The handle of glasses control object. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key_type</td><td>The type of the key. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key_function</td><td>The function of the key. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">flag</td><td>The toggle flag of the key. 1 is enable while 0 is disable. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data_callback</td><td>The callback function. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">user_data</td><td>The data which will be returned when callback is triggered. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The result of operation. </dd></dl>
+
+</div>
+</div>
+<a id="ga18feb43801d45e04a1af43f1a39df5df" name="ga18feb43801d45e04a1af43f1a39df5df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga18feb43801d45e04a1af43f1a39df5df">&#9670;&#160;</a></span>NRGlassesControlSetScreenStatusCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NRResult NRGlassesControlSetScreenStatusCallback </td>
+          <td>(</td>
+          <td class="paramtype">NRHandle&#160;</td>
+          <td class="paramname"><em>glasses_control_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NRGlassesControlScreenStatusCallback&#160;</td>
+          <td class="paramname"><em>data_callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get temerature of glasses. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">glasses_control_handle</td><td>The handle of glasses control object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">position</td><td>Which part of glasses </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out_temperature</td><td>The value of temperature </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The result of operation. </dd></dl>
+
+</div>
+</div>
+<a id="gae2741a88f73a0ad3e49c135b52c1e49d" name="gae2741a88f73a0ad3e49c135b52c1e49d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae2741a88f73a0ad3e49c135b52c1e49d">&#9670;&#160;</a></span>NRGlassesControlStartErrorsAndEventsReport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NRResult NRGlassesControlStartErrorsAndEventsReport </td>
+          <td>(</td>
+          <td class="paramtype">NRHandle&#160;</td>
+          <td class="paramname"><em>glasses_control_handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tell glasses' MCU to start to report Errors and Logs. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">glasses_control_handle</td><td>The handle of GlassesControl. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1379,9 +1346,12 @@ Functions</h2></td></tr>
 </div>
 </div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
 </body>
 </html>

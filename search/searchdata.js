@@ -1,11 +1,10 @@
 var indexSectionsWithContent =
 {
-  0: "cdfghlmnrsuv",
+  0: "cdgns",
   1: "n",
   2: "n",
   3: "n",
-  4: "cdfghmrsuv",
-  5: "dln"
+  4: "cdgs"
 };
 
 var indexSectionNames =
@@ -14,8 +13,7 @@ var indexSectionNames =
   1: "classes",
   2: "functions",
   3: "typedefs",
-  4: "groups",
-  5: "pages"
+  4: "groups"
 };
 
 var indexSectionLabels =
@@ -24,7 +22,6 @@ var indexSectionLabels =
   1: "Classes",
   2: "Functions",
   3: "Typedefs",
-  4: "Modules",
-  5: "Pages"
+  4: "Modules"
 };
 
